@@ -4,12 +4,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ * STUDENT NAME: TANAY KAPOOR
+ * STUDENT ID:301044399
+ * DESCRIPTION: THIS THE PROGRAM CLASS
+ */
 namespace COMP123_S2019_FinalTestA
 {
     static class Program
     {
         public static HeroGenerator heroGenerator;
+        public static AboutForm aboutForm;
 
 
         /// <summary>
@@ -22,6 +27,7 @@ namespace COMP123_S2019_FinalTestA
             Application.SetCompatibleTextRenderingDefault(false);
 
             heroGenerator = new HeroGenerator();
+            aboutForm = new AboutForm();
 
             Application.Run(heroGenerator);
         }

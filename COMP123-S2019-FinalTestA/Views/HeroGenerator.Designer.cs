@@ -41,8 +41,8 @@
             this.AbilityPage = new System.Windows.Forms.TabPage();
             this.AbilityTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.PhysicalAbilitiesLabel = new System.Windows.Forms.Label();
-            this.MentalAbilitiesLabel = new System.Windows.Forms.Label();
             this.PopularityDataLabel = new System.Windows.Forms.Label();
+            this.MentalAbilitiesLabel = new System.Windows.Forms.Label();
             this.PsycheDataLabel = new System.Windows.Forms.Label();
             this.IntuitionDataLabel = new System.Windows.Forms.Label();
             this.PopularityLabel = new System.Windows.Forms.Label();
@@ -60,6 +60,15 @@
             this.FightingDataLabel = new System.Windows.Forms.Label();
             this.GenerateAbilitiesButton = new System.Windows.Forms.Button();
             this.PowersPage = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.PowerLabel1 = new System.Windows.Forms.Label();
+            this.PowerLabel2 = new System.Windows.Forms.Label();
+            this.PowerLabel3 = new System.Windows.Forms.Label();
+            this.PowerLabel4 = new System.Windows.Forms.Label();
+            this.PowerDataLabel1 = new System.Windows.Forms.Label();
+            this.PowerDataLabel2 = new System.Windows.Forms.Label();
+            this.PowerDataLabel3 = new System.Windows.Forms.Label();
+            this.PowerDataLabel4 = new System.Windows.Forms.Label();
             this.CharacterSheet = new System.Windows.Forms.TabPage();
             this.HeroToolStrip = new System.Windows.Forms.ToolStrip();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -78,13 +87,51 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NextButton = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.GeneratePowersButton = new System.Windows.Forms.Button();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.HeaderDisplay = new System.Windows.Forms.Label();
+            this.FirstNameDisplayLabel = new System.Windows.Forms.Label();
+            this.LastNameDisplayLabel = new System.Windows.Forms.Label();
+            this.PhysicalAbilitiesDisplayHeaderLabel = new System.Windows.Forms.Label();
+            this.MentalAbilitiesDisplayHeaderLabel = new System.Windows.Forms.Label();
+            this.PowersDisplayHeaderLabel = new System.Windows.Forms.Label();
+            this.FirstNameDisplayDataLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.FightingDisplayDataLabel = new System.Windows.Forms.Label();
+            this.AgilityDisplayDataLabel = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.ReasonDisplayDataLabel = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.FightingDisplayLabel = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.AgilityDisplayLabel = new System.Windows.Forms.Label();
+            this.StrengthDisplayLabel = new System.Windows.Forms.Label();
+            this.EnduranceDisplayLabel = new System.Windows.Forms.Label();
+            this.ReasonDisplayLabel = new System.Windows.Forms.Label();
+            this.PsycheDisplayLabel = new System.Windows.Forms.Label();
+            this.IntuitionDisplayLabel = new System.Windows.Forms.Label();
+            this.PopularityDisplayLabel = new System.Windows.Forms.Label();
+            this.PowerDisplayLabel4 = new System.Windows.Forms.Label();
+            this.PowerDisplayLabel3 = new System.Windows.Forms.Label();
+            this.PowerDisplayLabel2 = new System.Windows.Forms.Label();
+            this.PowerDisplayLabel1 = new System.Windows.Forms.Label();
             this.MainTabControl.SuspendLayout();
             this.IdentityPage.SuspendLayout();
             this.AbilityPage.SuspendLayout();
             this.AbilityTableLayoutPanel.SuspendLayout();
+            this.PowersPage.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.CharacterSheet.SuspendLayout();
             this.HeroToolStrip.SuspendLayout();
             this.HeroMenuStrip.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainTabControl
@@ -243,19 +290,6 @@
             this.PhysicalAbilitiesLabel.Text = "Physical Abilities";
             this.PhysicalAbilitiesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // MentalAbilitiesLabel
-            // 
-            this.MentalAbilitiesLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.AbilityTableLayoutPanel.SetColumnSpan(this.MentalAbilitiesLabel, 2);
-            this.MentalAbilitiesLabel.Location = new System.Drawing.Point(381, 0);
-            this.MentalAbilitiesLabel.Name = "MentalAbilitiesLabel";
-            this.MentalAbilitiesLabel.Size = new System.Drawing.Size(373, 57);
-            this.MentalAbilitiesLabel.TabIndex = 2;
-            this.MentalAbilitiesLabel.Text = "Mental Abilities";
-            this.MentalAbilitiesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // PopularityDataLabel
             // 
             this.PopularityDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -268,6 +302,19 @@
             this.PopularityDataLabel.Size = new System.Drawing.Size(184, 57);
             this.PopularityDataLabel.TabIndex = 1;
             this.PopularityDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // MentalAbilitiesLabel
+            // 
+            this.MentalAbilitiesLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AbilityTableLayoutPanel.SetColumnSpan(this.MentalAbilitiesLabel, 2);
+            this.MentalAbilitiesLabel.Location = new System.Drawing.Point(381, 0);
+            this.MentalAbilitiesLabel.Name = "MentalAbilitiesLabel";
+            this.MentalAbilitiesLabel.Size = new System.Drawing.Size(373, 57);
+            this.MentalAbilitiesLabel.TabIndex = 2;
+            this.MentalAbilitiesLabel.Text = "Mental Abilities";
+            this.MentalAbilitiesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PsycheDataLabel
             // 
@@ -468,9 +515,12 @@
             this.GenerateAbilitiesButton.TabIndex = 3;
             this.GenerateAbilitiesButton.Text = "Generate Abilities";
             this.GenerateAbilitiesButton.UseVisualStyleBackColor = true;
+            this.GenerateAbilitiesButton.Click += new System.EventHandler(this.GenerateAbilitiesButton_Click);
             // 
             // PowersPage
             // 
+            this.PowersPage.Controls.Add(this.GeneratePowersButton);
+            this.PowersPage.Controls.Add(this.tableLayoutPanel1);
             this.PowersPage.Location = new System.Drawing.Point(4, 38);
             this.PowersPage.Name = "PowersPage";
             this.PowersPage.Padding = new System.Windows.Forms.Padding(3);
@@ -479,8 +529,136 @@
             this.PowersPage.Text = "Powers";
             this.PowersPage.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Controls.Add(this.PowerLabel1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.PowerLabel2, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.PowerLabel3, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.PowerLabel4, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.PowerDataLabel1, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.PowerDataLabel2, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.PowerDataLabel3, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.PowerDataLabel4, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(28, 73);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 5;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(691, 269);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // PowerLabel1
+            // 
+            this.PowerLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.SetColumnSpan(this.PowerLabel1, 2);
+            this.PowerLabel1.Location = new System.Drawing.Point(3, 53);
+            this.PowerLabel1.Name = "PowerLabel1";
+            this.PowerLabel1.Size = new System.Drawing.Size(338, 53);
+            this.PowerLabel1.TabIndex = 0;
+            this.PowerLabel1.Text = "Power 1:";
+            this.PowerLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PowerLabel2
+            // 
+            this.PowerLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.SetColumnSpan(this.PowerLabel2, 2);
+            this.PowerLabel2.Location = new System.Drawing.Point(3, 106);
+            this.PowerLabel2.Name = "PowerLabel2";
+            this.PowerLabel2.Size = new System.Drawing.Size(338, 53);
+            this.PowerLabel2.TabIndex = 0;
+            this.PowerLabel2.Text = "Power 2:";
+            this.PowerLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PowerLabel3
+            // 
+            this.PowerLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.SetColumnSpan(this.PowerLabel3, 2);
+            this.PowerLabel3.Location = new System.Drawing.Point(3, 159);
+            this.PowerLabel3.Name = "PowerLabel3";
+            this.PowerLabel3.Size = new System.Drawing.Size(338, 53);
+            this.PowerLabel3.TabIndex = 0;
+            this.PowerLabel3.Text = "Power 3:";
+            this.PowerLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PowerLabel4
+            // 
+            this.PowerLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.SetColumnSpan(this.PowerLabel4, 2);
+            this.PowerLabel4.Location = new System.Drawing.Point(3, 212);
+            this.PowerLabel4.Name = "PowerLabel4";
+            this.PowerLabel4.Size = new System.Drawing.Size(338, 57);
+            this.PowerLabel4.TabIndex = 0;
+            this.PowerLabel4.Text = "Power 4:";
+            this.PowerLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PowerDataLabel1
+            // 
+            this.PowerDataLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PowerDataLabel1.BackColor = System.Drawing.Color.LightGray;
+            this.tableLayoutPanel1.SetColumnSpan(this.PowerDataLabel1, 2);
+            this.PowerDataLabel1.Location = new System.Drawing.Point(347, 53);
+            this.PowerDataLabel1.Name = "PowerDataLabel1";
+            this.PowerDataLabel1.Size = new System.Drawing.Size(341, 53);
+            this.PowerDataLabel1.TabIndex = 1;
+            // 
+            // PowerDataLabel2
+            // 
+            this.PowerDataLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PowerDataLabel2.BackColor = System.Drawing.Color.LightGray;
+            this.tableLayoutPanel1.SetColumnSpan(this.PowerDataLabel2, 2);
+            this.PowerDataLabel2.Location = new System.Drawing.Point(347, 106);
+            this.PowerDataLabel2.Name = "PowerDataLabel2";
+            this.PowerDataLabel2.Size = new System.Drawing.Size(341, 53);
+            this.PowerDataLabel2.TabIndex = 1;
+            // 
+            // PowerDataLabel3
+            // 
+            this.PowerDataLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PowerDataLabel3.BackColor = System.Drawing.Color.LightGray;
+            this.tableLayoutPanel1.SetColumnSpan(this.PowerDataLabel3, 2);
+            this.PowerDataLabel3.Location = new System.Drawing.Point(347, 159);
+            this.PowerDataLabel3.Name = "PowerDataLabel3";
+            this.PowerDataLabel3.Size = new System.Drawing.Size(341, 53);
+            this.PowerDataLabel3.TabIndex = 1;
+            // 
+            // PowerDataLabel4
+            // 
+            this.PowerDataLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PowerDataLabel4.BackColor = System.Drawing.Color.LightGray;
+            this.tableLayoutPanel1.SetColumnSpan(this.PowerDataLabel4, 2);
+            this.PowerDataLabel4.Location = new System.Drawing.Point(347, 212);
+            this.PowerDataLabel4.Name = "PowerDataLabel4";
+            this.PowerDataLabel4.Size = new System.Drawing.Size(341, 57);
+            this.PowerDataLabel4.TabIndex = 1;
+            // 
             // CharacterSheet
             // 
+            this.CharacterSheet.Controls.Add(this.tableLayoutPanel2);
             this.CharacterSheet.Controls.Add(this.HeroToolStrip);
             this.CharacterSheet.Controls.Add(this.HeroMenuStrip);
             this.CharacterSheet.Location = new System.Drawing.Point(4, 38);
@@ -614,6 +792,7 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(134, 26);
             this.aboutToolStripMenuItem.Text = "&About...";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // NextButton
             // 
@@ -635,6 +814,487 @@
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.SetColumnSpan(this.label1, 4);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(685, 53);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Powers:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // GeneratePowersButton
+            // 
+            this.GeneratePowersButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.GeneratePowersButton.Location = new System.Drawing.Point(507, 348);
+            this.GeneratePowersButton.Name = "GeneratePowersButton";
+            this.GeneratePowersButton.Size = new System.Drawing.Size(212, 44);
+            this.GeneratePowersButton.TabIndex = 1;
+            this.GeneratePowersButton.Text = "Generate Powers";
+            this.GeneratePowersButton.UseVisualStyleBackColor = true;
+            this.GeneratePowersButton.Click += new System.EventHandler(this.GeneratePowersButton_Click);
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 6;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.Controls.Add(this.HeaderDisplay, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.FirstNameDisplayLabel, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.LastNameDisplayLabel, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.PhysicalAbilitiesDisplayHeaderLabel, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.MentalAbilitiesDisplayHeaderLabel, 2, 3);
+            this.tableLayoutPanel2.Controls.Add(this.PowersDisplayHeaderLabel, 4, 3);
+            this.tableLayoutPanel2.Controls.Add(this.FirstNameDisplayDataLabel, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label2, 3, 2);
+            this.tableLayoutPanel2.Controls.Add(this.FightingDisplayDataLabel, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.AgilityDisplayDataLabel, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.label5, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.ReasonDisplayDataLabel, 3, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label7, 5, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label8, 5, 5);
+            this.tableLayoutPanel2.Controls.Add(this.label9, 5, 6);
+            this.tableLayoutPanel2.Controls.Add(this.label10, 3, 6);
+            this.tableLayoutPanel2.Controls.Add(this.label11, 3, 5);
+            this.tableLayoutPanel2.Controls.Add(this.FightingDisplayLabel, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label13, 1, 7);
+            this.tableLayoutPanel2.Controls.Add(this.label14, 3, 7);
+            this.tableLayoutPanel2.Controls.Add(this.label15, 5, 7);
+            this.tableLayoutPanel2.Controls.Add(this.AgilityDisplayLabel, 0, 5);
+            this.tableLayoutPanel2.Controls.Add(this.StrengthDisplayLabel, 0, 6);
+            this.tableLayoutPanel2.Controls.Add(this.EnduranceDisplayLabel, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.ReasonDisplayLabel, 2, 4);
+            this.tableLayoutPanel2.Controls.Add(this.PsycheDisplayLabel, 2, 6);
+            this.tableLayoutPanel2.Controls.Add(this.IntuitionDisplayLabel, 2, 5);
+            this.tableLayoutPanel2.Controls.Add(this.PopularityDisplayLabel, 2, 7);
+            this.tableLayoutPanel2.Controls.Add(this.PowerDisplayLabel4, 4, 7);
+            this.tableLayoutPanel2.Controls.Add(this.PowerDisplayLabel3, 4, 6);
+            this.tableLayoutPanel2.Controls.Add(this.PowerDisplayLabel2, 4, 5);
+            this.tableLayoutPanel2.Controls.Add(this.PowerDisplayLabel1, 4, 4);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(40, 70);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 8;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.69841F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.69841F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.69841F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.69841F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.69841F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.69841F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.69841F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(694, 303);
+            this.tableLayoutPanel2.TabIndex = 2;
+            // 
+            // HeaderDisplay
+            // 
+            this.HeaderDisplay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.HeaderDisplay.BackColor = System.Drawing.Color.Aquamarine;
+            this.tableLayoutPanel2.SetColumnSpan(this.HeaderDisplay, 6);
+            this.HeaderDisplay.Location = new System.Drawing.Point(3, 0);
+            this.HeaderDisplay.Name = "HeaderDisplay";
+            this.HeaderDisplay.Size = new System.Drawing.Size(688, 38);
+            this.HeaderDisplay.TabIndex = 0;
+            this.HeaderDisplay.Text = "Player Characteristics";
+            this.HeaderDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // FirstNameDisplayLabel
+            // 
+            this.FirstNameDisplayLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.SetColumnSpan(this.FirstNameDisplayLabel, 3);
+            this.FirstNameDisplayLabel.Location = new System.Drawing.Point(3, 38);
+            this.FirstNameDisplayLabel.Name = "FirstNameDisplayLabel";
+            this.FirstNameDisplayLabel.Size = new System.Drawing.Size(339, 38);
+            this.FirstNameDisplayLabel.TabIndex = 1;
+            this.FirstNameDisplayLabel.Text = "First Name:";
+            this.FirstNameDisplayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LastNameDisplayLabel
+            // 
+            this.LastNameDisplayLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.SetColumnSpan(this.LastNameDisplayLabel, 3);
+            this.LastNameDisplayLabel.Location = new System.Drawing.Point(3, 76);
+            this.LastNameDisplayLabel.Name = "LastNameDisplayLabel";
+            this.LastNameDisplayLabel.Size = new System.Drawing.Size(339, 38);
+            this.LastNameDisplayLabel.TabIndex = 1;
+            this.LastNameDisplayLabel.Text = "Last Name:";
+            this.LastNameDisplayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PhysicalAbilitiesDisplayHeaderLabel
+            // 
+            this.PhysicalAbilitiesDisplayHeaderLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PhysicalAbilitiesDisplayHeaderLabel.BackColor = System.Drawing.Color.LightGreen;
+            this.tableLayoutPanel2.SetColumnSpan(this.PhysicalAbilitiesDisplayHeaderLabel, 2);
+            this.PhysicalAbilitiesDisplayHeaderLabel.Location = new System.Drawing.Point(3, 114);
+            this.PhysicalAbilitiesDisplayHeaderLabel.Name = "PhysicalAbilitiesDisplayHeaderLabel";
+            this.PhysicalAbilitiesDisplayHeaderLabel.Size = new System.Drawing.Size(224, 38);
+            this.PhysicalAbilitiesDisplayHeaderLabel.TabIndex = 1;
+            this.PhysicalAbilitiesDisplayHeaderLabel.Text = "Physical Abilities";
+            this.PhysicalAbilitiesDisplayHeaderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // MentalAbilitiesDisplayHeaderLabel
+            // 
+            this.MentalAbilitiesDisplayHeaderLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MentalAbilitiesDisplayHeaderLabel.BackColor = System.Drawing.Color.SandyBrown;
+            this.tableLayoutPanel2.SetColumnSpan(this.MentalAbilitiesDisplayHeaderLabel, 2);
+            this.MentalAbilitiesDisplayHeaderLabel.Location = new System.Drawing.Point(233, 114);
+            this.MentalAbilitiesDisplayHeaderLabel.Name = "MentalAbilitiesDisplayHeaderLabel";
+            this.MentalAbilitiesDisplayHeaderLabel.Size = new System.Drawing.Size(224, 38);
+            this.MentalAbilitiesDisplayHeaderLabel.TabIndex = 1;
+            this.MentalAbilitiesDisplayHeaderLabel.Text = "Mental Abilities";
+            this.MentalAbilitiesDisplayHeaderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PowersDisplayHeaderLabel
+            // 
+            this.PowersDisplayHeaderLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PowersDisplayHeaderLabel.BackColor = System.Drawing.Color.IndianRed;
+            this.tableLayoutPanel2.SetColumnSpan(this.PowersDisplayHeaderLabel, 2);
+            this.PowersDisplayHeaderLabel.Location = new System.Drawing.Point(463, 114);
+            this.PowersDisplayHeaderLabel.Name = "PowersDisplayHeaderLabel";
+            this.PowersDisplayHeaderLabel.Size = new System.Drawing.Size(228, 38);
+            this.PowersDisplayHeaderLabel.TabIndex = 1;
+            this.PowersDisplayHeaderLabel.Text = "Powers";
+            this.PowersDisplayHeaderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // FirstNameDisplayDataLabel
+            // 
+            this.FirstNameDisplayDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.FirstNameDisplayDataLabel.BackColor = System.Drawing.Color.LightGray;
+            this.tableLayoutPanel2.SetColumnSpan(this.FirstNameDisplayDataLabel, 3);
+            this.FirstNameDisplayDataLabel.Location = new System.Drawing.Point(348, 38);
+            this.FirstNameDisplayDataLabel.Name = "FirstNameDisplayDataLabel";
+            this.FirstNameDisplayDataLabel.Size = new System.Drawing.Size(343, 38);
+            this.FirstNameDisplayDataLabel.TabIndex = 2;
+            this.FirstNameDisplayDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.BackColor = System.Drawing.Color.LightGray;
+            this.tableLayoutPanel2.SetColumnSpan(this.label2, 3);
+            this.label2.Location = new System.Drawing.Point(348, 76);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(343, 38);
+            this.label2.TabIndex = 2;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // FightingDisplayDataLabel
+            // 
+            this.FightingDisplayDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.FightingDisplayDataLabel.BackColor = System.Drawing.Color.LightGray;
+            this.FightingDisplayDataLabel.Location = new System.Drawing.Point(118, 152);
+            this.FightingDisplayDataLabel.Name = "FightingDisplayDataLabel";
+            this.FightingDisplayDataLabel.Size = new System.Drawing.Size(109, 38);
+            this.FightingDisplayDataLabel.TabIndex = 2;
+            this.FightingDisplayDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // AgilityDisplayDataLabel
+            // 
+            this.AgilityDisplayDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AgilityDisplayDataLabel.BackColor = System.Drawing.Color.LightGray;
+            this.AgilityDisplayDataLabel.Location = new System.Drawing.Point(118, 190);
+            this.AgilityDisplayDataLabel.Name = "AgilityDisplayDataLabel";
+            this.AgilityDisplayDataLabel.Size = new System.Drawing.Size(109, 38);
+            this.AgilityDisplayDataLabel.TabIndex = 2;
+            this.AgilityDisplayDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.BackColor = System.Drawing.Color.LightGray;
+            this.label5.Location = new System.Drawing.Point(118, 228);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 38);
+            this.label5.TabIndex = 2;
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ReasonDisplayDataLabel
+            // 
+            this.ReasonDisplayDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ReasonDisplayDataLabel.BackColor = System.Drawing.Color.LightGray;
+            this.ReasonDisplayDataLabel.Location = new System.Drawing.Point(348, 152);
+            this.ReasonDisplayDataLabel.Name = "ReasonDisplayDataLabel";
+            this.ReasonDisplayDataLabel.Size = new System.Drawing.Size(109, 38);
+            this.ReasonDisplayDataLabel.TabIndex = 2;
+            this.ReasonDisplayDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.BackColor = System.Drawing.Color.LightGray;
+            this.label7.Location = new System.Drawing.Point(578, 152);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(113, 38);
+            this.label7.TabIndex = 2;
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.BackColor = System.Drawing.Color.LightGray;
+            this.label8.Location = new System.Drawing.Point(578, 190);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(113, 38);
+            this.label8.TabIndex = 2;
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.BackColor = System.Drawing.Color.LightGray;
+            this.label9.Location = new System.Drawing.Point(578, 228);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(113, 38);
+            this.label9.TabIndex = 2;
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.BackColor = System.Drawing.Color.LightGray;
+            this.label10.Location = new System.Drawing.Point(348, 228);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(109, 38);
+            this.label10.TabIndex = 2;
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.BackColor = System.Drawing.Color.LightGray;
+            this.label11.Location = new System.Drawing.Point(348, 190);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(109, 38);
+            this.label11.TabIndex = 2;
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // FightingDisplayLabel
+            // 
+            this.FightingDisplayLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.FightingDisplayLabel.Location = new System.Drawing.Point(3, 152);
+            this.FightingDisplayLabel.Name = "FightingDisplayLabel";
+            this.FightingDisplayLabel.Size = new System.Drawing.Size(109, 38);
+            this.FightingDisplayLabel.TabIndex = 3;
+            this.FightingDisplayLabel.Text = "Fighting";
+            this.FightingDisplayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.BackColor = System.Drawing.Color.LightGray;
+            this.label13.Location = new System.Drawing.Point(118, 266);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(109, 37);
+            this.label13.TabIndex = 2;
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.BackColor = System.Drawing.Color.LightGray;
+            this.label14.Location = new System.Drawing.Point(348, 266);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(109, 37);
+            this.label14.TabIndex = 2;
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label15
+            // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label15.BackColor = System.Drawing.Color.LightGray;
+            this.label15.Location = new System.Drawing.Point(578, 266);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(113, 37);
+            this.label15.TabIndex = 2;
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // AgilityDisplayLabel
+            // 
+            this.AgilityDisplayLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AgilityDisplayLabel.Location = new System.Drawing.Point(3, 190);
+            this.AgilityDisplayLabel.Name = "AgilityDisplayLabel";
+            this.AgilityDisplayLabel.Size = new System.Drawing.Size(109, 38);
+            this.AgilityDisplayLabel.TabIndex = 3;
+            this.AgilityDisplayLabel.Text = "Agility";
+            this.AgilityDisplayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // StrengthDisplayLabel
+            // 
+            this.StrengthDisplayLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.StrengthDisplayLabel.Location = new System.Drawing.Point(3, 228);
+            this.StrengthDisplayLabel.Name = "StrengthDisplayLabel";
+            this.StrengthDisplayLabel.Size = new System.Drawing.Size(109, 38);
+            this.StrengthDisplayLabel.TabIndex = 3;
+            this.StrengthDisplayLabel.Text = "Strength";
+            this.StrengthDisplayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EnduranceDisplayLabel
+            // 
+            this.EnduranceDisplayLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.EnduranceDisplayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EnduranceDisplayLabel.Location = new System.Drawing.Point(3, 266);
+            this.EnduranceDisplayLabel.Name = "EnduranceDisplayLabel";
+            this.EnduranceDisplayLabel.Size = new System.Drawing.Size(109, 37);
+            this.EnduranceDisplayLabel.TabIndex = 3;
+            this.EnduranceDisplayLabel.Text = "Endurance";
+            this.EnduranceDisplayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ReasonDisplayLabel
+            // 
+            this.ReasonDisplayLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ReasonDisplayLabel.Location = new System.Drawing.Point(233, 152);
+            this.ReasonDisplayLabel.Name = "ReasonDisplayLabel";
+            this.ReasonDisplayLabel.Size = new System.Drawing.Size(109, 38);
+            this.ReasonDisplayLabel.TabIndex = 3;
+            this.ReasonDisplayLabel.Text = "Reason";
+            this.ReasonDisplayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PsycheDisplayLabel
+            // 
+            this.PsycheDisplayLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PsycheDisplayLabel.Location = new System.Drawing.Point(233, 228);
+            this.PsycheDisplayLabel.Name = "PsycheDisplayLabel";
+            this.PsycheDisplayLabel.Size = new System.Drawing.Size(109, 38);
+            this.PsycheDisplayLabel.TabIndex = 3;
+            this.PsycheDisplayLabel.Text = "Psyche";
+            this.PsycheDisplayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.PsycheDisplayLabel.Click += new System.EventHandler(this.label19_Click);
+            // 
+            // IntuitionDisplayLabel
+            // 
+            this.IntuitionDisplayLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.IntuitionDisplayLabel.Location = new System.Drawing.Point(233, 190);
+            this.IntuitionDisplayLabel.Name = "IntuitionDisplayLabel";
+            this.IntuitionDisplayLabel.Size = new System.Drawing.Size(109, 38);
+            this.IntuitionDisplayLabel.TabIndex = 3;
+            this.IntuitionDisplayLabel.Text = "Intuition";
+            this.IntuitionDisplayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PopularityDisplayLabel
+            // 
+            this.PopularityDisplayLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PopularityDisplayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PopularityDisplayLabel.Location = new System.Drawing.Point(233, 266);
+            this.PopularityDisplayLabel.Name = "PopularityDisplayLabel";
+            this.PopularityDisplayLabel.Size = new System.Drawing.Size(109, 37);
+            this.PopularityDisplayLabel.TabIndex = 3;
+            this.PopularityDisplayLabel.Text = "Popularity";
+            this.PopularityDisplayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PowerDisplayLabel4
+            // 
+            this.PowerDisplayLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PowerDisplayLabel4.Location = new System.Drawing.Point(463, 266);
+            this.PowerDisplayLabel4.Name = "PowerDisplayLabel4";
+            this.PowerDisplayLabel4.Size = new System.Drawing.Size(109, 37);
+            this.PowerDisplayLabel4.TabIndex = 3;
+            this.PowerDisplayLabel4.Text = "Power 4";
+            this.PowerDisplayLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PowerDisplayLabel3
+            // 
+            this.PowerDisplayLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PowerDisplayLabel3.Location = new System.Drawing.Point(463, 228);
+            this.PowerDisplayLabel3.Name = "PowerDisplayLabel3";
+            this.PowerDisplayLabel3.Size = new System.Drawing.Size(109, 38);
+            this.PowerDisplayLabel3.TabIndex = 3;
+            this.PowerDisplayLabel3.Text = "Power 3";
+            this.PowerDisplayLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PowerDisplayLabel2
+            // 
+            this.PowerDisplayLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PowerDisplayLabel2.Location = new System.Drawing.Point(463, 190);
+            this.PowerDisplayLabel2.Name = "PowerDisplayLabel2";
+            this.PowerDisplayLabel2.Size = new System.Drawing.Size(109, 38);
+            this.PowerDisplayLabel2.TabIndex = 3;
+            this.PowerDisplayLabel2.Text = "Power 2";
+            this.PowerDisplayLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PowerDisplayLabel1
+            // 
+            this.PowerDisplayLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PowerDisplayLabel1.Location = new System.Drawing.Point(463, 152);
+            this.PowerDisplayLabel1.Name = "PowerDisplayLabel1";
+            this.PowerDisplayLabel1.Size = new System.Drawing.Size(109, 38);
+            this.PowerDisplayLabel1.TabIndex = 3;
+            this.PowerDisplayLabel1.Text = "Power 1";
+            this.PowerDisplayLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // HeroGenerator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
@@ -650,12 +1310,15 @@
             this.IdentityPage.PerformLayout();
             this.AbilityPage.ResumeLayout(false);
             this.AbilityTableLayoutPanel.ResumeLayout(false);
+            this.PowersPage.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.CharacterSheet.ResumeLayout(false);
             this.CharacterSheet.PerformLayout();
             this.HeroToolStrip.ResumeLayout(false);
             this.HeroToolStrip.PerformLayout();
             this.HeroMenuStrip.ResumeLayout(false);
             this.HeroMenuStrip.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -711,5 +1374,49 @@
         private System.Windows.Forms.Label StrengthDataLabel;
         private System.Windows.Forms.Label FightingDataLabel;
         private System.Windows.Forms.Button GenerateAbilitiesButton;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label PowerLabel1;
+        private System.Windows.Forms.Label PowerLabel2;
+        private System.Windows.Forms.Label PowerLabel3;
+        private System.Windows.Forms.Label PowerLabel4;
+        private System.Windows.Forms.Label PowerDataLabel1;
+        private System.Windows.Forms.Label PowerDataLabel2;
+        private System.Windows.Forms.Label PowerDataLabel3;
+        private System.Windows.Forms.Label PowerDataLabel4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button GeneratePowersButton;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label HeaderDisplay;
+        private System.Windows.Forms.Label FirstNameDisplayLabel;
+        private System.Windows.Forms.Label LastNameDisplayLabel;
+        private System.Windows.Forms.Label PhysicalAbilitiesDisplayHeaderLabel;
+        private System.Windows.Forms.Label MentalAbilitiesDisplayHeaderLabel;
+        private System.Windows.Forms.Label PowersDisplayHeaderLabel;
+        private System.Windows.Forms.Label FirstNameDisplayDataLabel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label FightingDisplayDataLabel;
+        private System.Windows.Forms.Label AgilityDisplayDataLabel;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label ReasonDisplayDataLabel;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label FightingDisplayLabel;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label AgilityDisplayLabel;
+        private System.Windows.Forms.Label StrengthDisplayLabel;
+        private System.Windows.Forms.Label EnduranceDisplayLabel;
+        private System.Windows.Forms.Label ReasonDisplayLabel;
+        private System.Windows.Forms.Label PsycheDisplayLabel;
+        private System.Windows.Forms.Label IntuitionDisplayLabel;
+        private System.Windows.Forms.Label PopularityDisplayLabel;
+        private System.Windows.Forms.Label PowerDisplayLabel4;
+        private System.Windows.Forms.Label PowerDisplayLabel3;
+        private System.Windows.Forms.Label PowerDisplayLabel2;
+        private System.Windows.Forms.Label PowerDisplayLabel1;
     }
 }
